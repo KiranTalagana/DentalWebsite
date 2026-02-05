@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Book your dental appointment online at Bright Smile Dental Clinic. Easy scheduling, flexible hours, and personalized care for you and your family.">
+    <title>Book Appointment | Bright Smile Dental Clinic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm-3 28c-2.5 0-4-3-4-8s1.5-8 4-8 3 2 4 2 2-2 3-2c2.5 0 4 3 4 8s-1.5 8-4 8-2-2-3-2-2 2-3 2z"
+                        fill="currentColor" />
+                </svg>
+                Bright Smile
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="appointment.html" class="nav-link active">Book Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="appointment.html" class="btn btn-primary">Get Started</a></li>
+            </ul>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your visit in just a few easy steps</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Book Appointment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1.2fr; gap: var(--space-2xl);">
+
+                <!-- Info Side -->
+                <div class="reveal">
+                    <h2 style="margin-bottom: var(--space-lg);">Why Book With Us?</h2>
+                    <p style="color: var(--gray-600); margin-bottom: var(--space-xl);">We make scheduling your dental
+                        appointment easy and convenient. Here's what you can expect:</p>
+
+                    <div class="feature-item" style="margin-bottom: var(--space-lg);">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Flexible Scheduling</h4>
+                            <p>Morning, afternoon, and evening appointments available</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" style="margin-bottom: var(--space-lg);">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Instant Confirmation</h4>
+                            <p>Receive confirmation via email immediately</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" style="margin-bottom: var(--space-lg);">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Insurance Friendly</h4>
+                            <p>We accept most major insurance plans</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Reminder Service</h4>
+                            <p>Get reminders before your appointment</p>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: var(--space-2xl); padding: var(--space-lg); background: var(--gray-50); border-radius: var(--radius-lg);">
+                        <h4 style="margin-bottom: var(--space-sm);">Office Hours</h4>
+                        <p style="margin: 0; color: var(--gray-600); font-size: 0.95rem;">
+                            Monday - Friday: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 3:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="appointment-form-wrapper reveal delay-1">
+                    <!-- Success Message -->
+                    <div class="success-message" id="appointmentSuccess" style="margin-bottom: var(--space-lg);">
+                        <h3 style="color: white; margin-bottom: var(--space-sm);">🎉 Appointment Request Submitted!</h3>
+                        <div id="confirmationDetails"></div>
+                    </div>
+
+                    <h3 style="margin-bottom: var(--space-lg);">Schedule Your Visit</h3>
+
+                    <form id="appointmentForm">
+                        <!-- Patient Information -->
+                        <h4 style="margin-bottom: var(--space-md); color: var(--primary);">Patient Information</h4>
+
+                        <div class="form-group">
+                            <label class="form-label" for="patientName">Full Name *</label>
+                            <input type="text" class="form-input" id="patientName" name="patientName"
+                                placeholder="Enter your full name" required>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="patientEmail">Email Address *</label>
+                                <input type="email" class="form-input" id="patientEmail" name="patientEmail"
+                                    placeholder="your@email.com" required>
+                                <span class="form-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="patientPhone">Phone Number *</label>
+                                <input type="tel" class="form-input" id="patientPhone" name="patientPhone"
+                                    placeholder="(555) 123-4567" required oninput="formatPhoneNumber(this)">
+                                <span class="form-error"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input type="checkbox" id="isNewPatient" name="isNewPatient"
+                                    style="margin-right: var(--space-sm);">
+                                I am a new patient
+                            </label>
+                        </div>
+
+                        <!-- Appointment Details -->
+                        <h4 style="margin: var(--space-xl) 0 var(--space-md); color: var(--primary);">Appointment
+                            Details</h4>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="serviceType">Service Type *</label>
+                                <select class="form-select" id="serviceType" name="serviceType" required>
+                                    <option value="">Select a service</option>
+                                    <optgroup label="General Dentistry">
+                                        <option value="Dental Checkup">Dental Checkup & Cleaning</option>
+                                        <option value="Filling">Filling</option>
+                                        <option value="Root Canal">Root Canal</option>
+                                        <option value="Extraction">Tooth Extraction</option>
+                                    </optgroup>
+                                    <optgroup label="Cosmetic Dentistry">
+                                        <option value="Teeth Whitening">Teeth Whitening</option>
+                                        <option value="Veneers">Porcelain Veneers</option>
+                                        <option value="Bonding">Dental Bonding</option>
+                                    </optgroup>
+                                    <optgroup label="Orthodontics">
+                                        <option value="Braces Consultation">Braces Consultation</option>
+                                        <option value="Invisalign">Invisalign Consultation</option>
+                                    </optgroup>
+                                    <optgroup label="Other">
+                                        <option value="Dental Implant">Dental Implant Consultation</option>
+                                        <option value="Pediatric">Pediatric Dental Visit</option>
+                                        <option value="Emergency">Emergency Visit</option>
+                                        <option value="Other">Other (Specify in notes)</option>
+                                    </optgroup>
+                                </select>
+                                <span class="form-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="preferredDentist">Preferred Dentist</label>
+                                <select class="form-select" id="preferredDentist" name="preferredDentist">
+                                    <option value="">No preference</option>
+                                    <option value="Dr. Sarah Mitchell">Dr. Sarah Mitchell</option>
+                                    <option value="Dr. James Wilson">Dr. James Wilson</option>
+                                    <option value="Dr. Emily Parker">Dr. Emily Parker</option>
+                                    <option value="Dr. Michael Chen">Dr. Michael Chen</option>
+                                    <option value="Dr. Lisa Rodriguez">Dr. Lisa Rodriguez</option>
+                                    <option value="Dr. David Kim">Dr. David Kim</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Date & Time -->
+                        <h4 style="margin: var(--space-xl) 0 var(--space-md); color: var(--primary);">Preferred Date &
+                            Time</h4>
+
+                        <div class="form-group">
+                            <label class="form-label" for="appointmentDate">Preferred Date *</label>
+                            <input type="date" class="form-input date-input" id="appointmentDate" name="appointmentDate"
+                                required>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time Slot *</label>
+                            <input type="hidden" id="selectedTime" name="selectedTime">
+                            <div class="time-slots">
+                                <div class="time-slot" data-time="09:00 AM">9:00 AM</div>
+                                <div class="time-slot" data-time="09:30 AM">9:30 AM</div>
+                                <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+                                <div class="time-slot" data-time="10:30 AM">10:30 AM</div>
+                                <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+                                <div class="time-slot" data-time="11:30 AM">11:30 AM</div>
+                                <div class="time-slot" data-time="12:00 PM">12:00 PM</div>
+                                <div class="time-slot" data-time="01:00 PM">1:00 PM</div>
+                                <div class="time-slot" data-time="01:30 PM">1:30 PM</div>
+                                <div class="time-slot" data-time="02:00 PM">2:00 PM</div>
+                                <div class="time-slot" data-time="02:30 PM">2:30 PM</div>
+                                <div class="time-slot" data-time="03:00 PM">3:00 PM</div>
+                                <div class="time-slot" data-time="03:30 PM">3:30 PM</div>
+                                <div class="time-slot" data-time="04:00 PM">4:00 PM</div>
+                                <div class="time-slot" data-time="04:30 PM">4:30 PM</div>
+                                <div class="time-slot" data-time="05:00 PM">5:00 PM</div>
+                            </div>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <!-- Additional Notes -->
+                        <div class="form-group">
+                            <label class="form-label" for="additionalNotes">Additional Notes or Concerns</label>
+                            <textarea class="form-textarea" id="additionalNotes" name="additionalNotes"
+                                placeholder="Please share any specific concerns, allergies, or additional information..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            Request Appointment
+                        </button>
+
+                        <p
+                            style="text-align: center; margin-top: var(--space-md); font-size: 0.875rem; color: var(--gray-500);">
+                            By submitting, you agree to our appointment policy. We'll confirm your appointment within 24
+                            hours.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm-3 28c-2.5 0-4-3-4-8s1.5-8 4-8 3 2 4 2 2-2 3-2c2.5 0 4 3 4 8s-1.5 8-4 8-2-2-3-2-2 2-3 2z"
+                                fill="currentColor" />
+                        </svg>
+                        Bright Smile
+                    </a>
+                    <p>Providing exceptional dental care with a gentle touch. Your smile is our passion, and your
+                        comfort is our priority.</p>
+                </div>
+
+                <div class="footer-links-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">General Dentistry</a></li>
+                        <li><a href="services.html">Cosmetic Dentistry</a></li>
+                        <li><a href="services.html">Orthodontics</a></li>
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            <span>123 Dental Street<br>Suite 100<br>City, State 12345</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <span>info@brightsmile.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bright Smile Dental Clinic. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm2 12a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v8z" />
+                            <circle cx="12" cy="12" r="3" />
+                            <circle cx="16.5" cy="7.5" r="1" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
