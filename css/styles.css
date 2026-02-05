@@ -4,13 +4,18 @@
 
 /* CSS Custom Properties */
 :root {
-  /* Colors */
-  --primary: #0891b2;
-  --primary-dark: #0e7490;
-  --primary-light: #22d3ee;
-  --secondary: #06b6d4;
-  --accent: #14b8a6;
-  --accent-light: #5eead4;
+  /* Colors - Green/Dark theme matching logo */
+  --primary: #22c55e;
+  --primary-dark: #16a34a;
+  --primary-light: #4ade80;
+  --secondary: #10b981;
+  --accent: #059669;
+  --accent-light: #34d399;
+
+  /* Dark theme colors */
+  --dark: #1a1a1a;
+  --dark-light: #2d2d2d;
+  --dark-lighter: #404040;
 
   /* Neutrals */
   --white: #ffffff;
@@ -26,7 +31,7 @@
   --gray-900: #0f172a;
 
   /* Semantic */
-  --success: #10b981;
+  --success: #22c55e;
   --warning: #f59e0b;
   --error: #ef4444;
 
@@ -251,6 +256,20 @@ p {
 .nav-logo svg {
   width: 40px;
   height: 40px;
+}
+
+.nav-logo .logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.hero-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: var(--space-md);
 }
 
 .nav-menu {
